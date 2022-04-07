@@ -1,0 +1,75 @@
+/* sprites */
+:root {
+  --logos-sprite: url('https://images-na.ssl-images-amazon.com/images/G/01/gno/sprites/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_.png');
+  --flags-sprite: url('https://m.media-amazon.com/images/S/sash/lZnO6IKWusCAeIh.png');
+  --info-sprite: url('https://m.media-amazon.com/images/G/01/ad-feedback/info_icon_1Xsprite.png');
+  --location-black-sprite: url('https://m.media-amazon.com/images/S/sash/kIT-Lj9i1Bch8yi.png');
+}
+
+.location,
+.amazon-logo,
+.chart,
+.hamburger,
+.arrow {
+  background-image: var(--logos-sprite);
+}
+
+.amazon-logo {
+  background-position-x: -10px;
+  background-position-y: -51px;
+  background-repeat: no-repeat;
+  width: 97px;
+  height: 30px;
+}
+
+.location {
+  background-position-x: -71px;
+  background-position-y: -378px;
+  width: 15px;
+  height: 18px;
+  margin: 3px;
+}
+
+.location-black {
+  background: var(--location-black-sprite);
+  height: 14px;
+  width: 12px;
+  transform: scale(0.7);
+}
+
+.prime {
+  background: url('https://m.media-amazon.com/images/S/sash/E6vgqiIirWgGb3f.png');
+  background-position-x: -138px;
+  background-position-y: -72px;
+  width: 42px;
+  height: 14px;
+}
+
+.chart {
+  background-position-x: -9px;
+  background-position-y: 115px;
+  width: 39px;
+  height: 26px;
+}
+
+.hamburger {
+  background-position-x: -172px;
+  background-position-y: -255px;
+  width: 17px;
+  height: 14px;
+}
+
+.flag {
+  background-image: var(--flags-sprite);
+  background-position-y: -130px;
+  height: 18px;
+  width: 24px;
+  margin-right: 3px;
+}
+
+.info {
+  background-image: var(--info-sprite);
+  /* background-position-y: -12px; */
+  height: 12px;
+  width: 14px;
+}
