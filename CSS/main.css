@@ -20,6 +20,7 @@ a {
   color: white;
 }
 
+/* ========= Top nav ========== */
 .nav-top {
   background-color: var(--top-nav-color);
   width: 100%;
@@ -38,8 +39,8 @@ a {
   flex-grow: 0;
 }
 
-.top-nav-item:hover {
-  padding: 9px;
+.top-nav-item:hover,
+.nav-mid-item:hover {
   border: 1px white solid;
   border-radius: 2px;
 }
@@ -71,11 +72,16 @@ a {
 }
 
 .nav-top .serch-box form select {
-  background-color: lightgray;
+  background-color: #eee;
+  color: #777;
   margin: 0;
   width: 80px;
   text-align: center;
   font-family: 'Amazon Ember', Arial, sans-serif;
+}
+.nav-top .serch-box form select:hover {
+  background-color: #ccc;
+  color: #444;
 }
 
 .nav-top .serch-box:focus {
@@ -98,3 +104,24 @@ a {
   font-weight: 700;
   text-align: center;
 }
+
+/* ========= /Top nav ========== */
+
+/* ========= Mid nav ========== */
+.nav-mid {
+  background-color: var(--mid-nav-color);
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.hamburger-item {
+  display: flex;
+}
+
+.nav-mid-item {
+  font-size: 14px;
+  padding: 2px 5px;
+}
+/* ========= /Mid nav ========== */
