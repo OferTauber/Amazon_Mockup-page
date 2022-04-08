@@ -11,7 +11,7 @@
   --link-red-color: rgb(199, 81, 31);
   --mid-nav-color: rgb(35, 47, 62);
   --orange-color: rgb(254, 189, 105);
-  --gray-clor: rgb(229, 231, 235);
+  --gray-color: rgb(229, 231, 235);
   --red-color: rgb(177, 39, 4);
   --contaioner-widet: 800px;
   --carrousel-height: 250px;
@@ -428,7 +428,7 @@ main {
 .gray-line {
   width: 90%;
   height: 1px;
-  border-bottom: 1px solid var(--gray-clor);
+  border-bottom: 1px solid var(--gray-color);
   margin: auto;
 }
 
@@ -477,7 +477,7 @@ aside {
 }
 
 aside .box {
-  border: 1px var(--gray-clor) solid;
+  border: 1px var(--gray-color) solid;
   border-radius: 10px;
   /* padding: 10px; */
   font-size: 14px;
@@ -587,7 +587,7 @@ a .red-price {
   margin: auto;
   width: 90%;
   padding: 10px;
-  border-top: 1px solid var(--gray-clor);
+  border-top: 1px solid var(--gray-color);
 }
 
 .frame .price {
@@ -610,6 +610,9 @@ a .red-price {
 /* ===== Buy it with ========*/
 .buy-it-with {
   grid-area: buy-it-with;
+}
+.buy-it-with > * {
+  margin: 15px 30px;
 }
 
 .carousel-style h3 {
@@ -649,7 +652,7 @@ a .red-price {
   justify-content: space-between;
 }
 .buy-it-with .items-block {
-  width: 50%;
+  width: 70%;
 }
 
 .blue-icon {
@@ -661,7 +664,19 @@ a .red-price {
 }
 .carousel-style a:hover {
   color: var(--orange-color);
-  text-decoration: underline;
+}
+
+.buy-it-with .red-price {
+  font-size: medium;
+}
+
+.buy-it-with > div > p {
+  margin-top: 8px;
+}
+
+.total-price p {
+  padding-bottom: 3px;
+  text-align: center;
 }
 /* ===== /Buy it with ========*/
 
@@ -672,6 +687,71 @@ a .red-price {
 }
 
 /* ============= /carrousel ============ */
+.carrousel .flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  height: 32px;
+}
+
+.carrousel .flex-container h6 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.carrousel .items-box {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.carrousel-arrow {
+  border: var(--gray-color) 1px solid;
+  border-radius: 10px;
+  padding: 20px 15px;
+  cursor: pointer;
+}
+.carrousel-arrow:hover {
+  background-color: var(--gray-color);
+}
+
+.carrousel-item {
+  width: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: small;
+}
+
+.carrousel-item:hover a {
+  text-decoration: underline;
+  color: rgb(199, 81, 31);
+}
+
+.carrousel-item .star-box {
+  margin: 0;
+}
+
+.carrousel-img {
+  height: 160px;
+  width: 160px;
+}
+
+.item1 .carrousel-img {
+  background-image: url('https://m.media-amazon.com/images/I/41ixm7weiML._AC_SR160,160_.jpg');
+}
+.item2 .carrousel-img {
+  background-image: url('https://m.media-amazon.com/images/I/51ukZs-tDTL._AC_SR160,160_.jpg');
+}
+.item3 .carrousel-img {
+  background-image: url('https://m.media-amazon.com/images/I/51Z0zU2M8dL._AC_SR160,160_.jpg');
+}
+.item4 .carrousel-img {
+  background-image: url('https://m.media-amazon.com/images/I/517gfS6GB5S._AC_SR160,160_.jpg');
+}
 
 /* 
 
@@ -682,9 +762,9 @@ dummy
 dummy
 dummy
 */
-.product-data {
+/* .product-data {
   border: purple 2px dashed;
-  /* height: 100%; */
+  
 }
 .product-image {
   border: green 2px dashed;
@@ -692,7 +772,7 @@ dummy
 }
 aside {
   border: tan 2px dashed;
-  /* height: 100%; */
+  
 }
 
 .buy-it-with {
@@ -700,4 +780,4 @@ aside {
 }
 .carrousel {
   border: olive 2px dashed;
-}
+} */
