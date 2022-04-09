@@ -332,6 +332,13 @@ main {
   height: fit-content;
 }
 
+@media (max-width: 770px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 /* ==== Product-image ==== */
 .product-image {
   width: 450px;
@@ -707,6 +714,19 @@ a .red-price {
   width: 70%;
 }
 
+@media (max-width: 770px) {
+  .buy-it-with .items-block {
+    width: 100%;
+  }
+}
+
+@media (max-width: 580px) {
+  .buy-it-with .items-block :nth-child(2),
+  .buy-it-with .items-block :nth-child(3) {
+    display: none;
+  }
+}
+
 .blue-icon {
   color: var(--color-blue);
 }
@@ -738,7 +758,6 @@ a .red-price {
   grid-area: carrousel;
 }
 
-/* ============= /carrousel ============ */
 .carrousel .flex-container {
   display: flex;
   justify-content: space-between;
@@ -805,31 +824,13 @@ a .red-price {
   background-image: url('https://m.media-amazon.com/images/I/517gfS6GB5S._AC_SR160,160_.jpg');
 }
 
-/* 
-
-
-dummy
-dummy
-dummy
-dummy
-dummy
-*/
-/* .product-data {
-  border: purple 2px dashed;
-  
+@media (max-width: 770px) {
+  .carrousel .item1 {
+    display: none;
+  }
 }
-.product-image {
-  border: green 2px dashed;
-  height: 60%;
+@media (max-width: 580px) {
+  .carrousel .item2 {
+    display: none;
+  }
 }
-aside {
-  border: tan 2px dashed;
-  
-}
-
-.buy-it-with {
-  border: seagreen 2px dashed;
-}
-.carrousel {
-  border: olive 2px dashed;
-} */
