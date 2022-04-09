@@ -419,7 +419,7 @@ main {
   background-color: white;
 }
 
-.gallery-item:hover::after {
+.gallery-item::after {
   content: '';
   height: 250px;
   width: 350px;
@@ -427,6 +427,10 @@ main {
   position: absolute;
   top: 0;
   left: 60px;
+}
+
+.gallery-item1::after {
+  background: var(--img1);
 }
 
 .gallery-item1:hover::after {
@@ -456,7 +460,6 @@ main {
 
 .large-product-image {
   width: 100%;
-  /* display: none; */
 }
 
 .gallery-item1:hover ~ .img1 {
