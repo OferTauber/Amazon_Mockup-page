@@ -16,6 +16,7 @@
   --contaioner-widet: 800px;
   --carrousel-height: 250px;
   --color-blue: rgb(0, 113, 133);
+  --tablet-width: 768px;
 }
 
 a {
@@ -112,6 +113,55 @@ a {
   text-align: center;
 }
 
+@media (max-width: 770px) {
+  .nav-top {
+    display: grid;
+    height: 100px;
+    grid-template-areas:
+      'logo sign-in chart'
+      'serch serch serch';
+    grid-template-columns: 120px 1fr 120px;
+    grid-template-rows: 1fr 1fr;
+  }
+  .tablet-logo {
+    transform: scale(0.7);
+    grid-area: logo;
+    margin-right: auto;
+  }
+
+  .top-nav-item1 {
+    display: none;
+  }
+
+  #searchDropdownBox {
+    display: none !important;
+  }
+
+  .serch-box {
+    grid-area: serch;
+  }
+
+  .tablet-chart {
+    grid-area: chart;
+  }
+
+  .tablet-sign-in {
+    grid-area: sign-in;
+    margin-left: auto;
+  }
+
+  .tablet-return {
+    display: none;
+  }
+
+  .nav-mid-item {
+    display: none;
+  }
+  .hamburger-item {
+    display: contents !important;
+  }
+}
+
 /* ========= /Top nav ========== */
 
 /* ========= Mid nav ========== */
@@ -161,6 +211,11 @@ a {
   border-bottom: var(--orange-color) 4px solid;
 }
 
+@media (max-width: 770px) {
+  .nav-sub {
+    display: none;
+  }
+}
 /* ========= /Sub nav ========== */
 
 /* ======== commercial ========= */
@@ -393,9 +448,6 @@ main {
 }
 
 /* ====== /Product-image ==== */
-.product-image {
-  border: 2px dashed purple;
-}
 
 /* === Product Data ===== */
 .product-data {
