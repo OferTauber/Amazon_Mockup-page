@@ -75,6 +75,10 @@ a {
   overflow: hidden;
 }
 
+.nav-top .serch-box form:focus-within {
+  box-shadow: 0 0 2px 2px var(--orange-color);
+}
+
 .grow {
   flex-grow: 1;
 }
@@ -104,7 +108,12 @@ a {
   width: 40px;
   border: none;
   background: url('../assets/img/search.png') center center / cover no-repeat;
+  background-size: 20px 20px;
   background-color: var(--orange-color);
+  position: relative;
+}
+.nav-top .serch-box form .submit:hover {
+  background-color: rgb(211, 145, 59);
 }
 
 .chart {
